@@ -2,7 +2,8 @@
 #if MCELoader
 using Il2CppQuantum;
 #endif
-namespace MCELoader.Shared.ProxyTypes;
+namespace MCELoader.Shared.ProxyTypes
+{
 
 #if MCEEditor
 public enum EventTriggerType
@@ -25,10 +26,11 @@ public enum EventTriggerType
 #if MCELoader
 [SourceType(typeof(Il2CppQuantum.EventTriggerEntry))]
 #endif
-public struct EventTriggerEntry
-{
-    public int colliderIndex; //Field offset: 0x0
-    public EventTriggerType type; //Field offset: 0x4
-    public int data; //Field offset: 0x8
+    public struct EventTriggerEntry
+    {
+        public int colliderIndex; //Field offset: 0x0
+        public EventTriggerType type; //Field offset: 0x4
+        public int data; //Field offset: 0x8
 
+    }
 }

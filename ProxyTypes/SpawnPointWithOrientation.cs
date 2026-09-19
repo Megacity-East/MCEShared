@@ -1,10 +1,13 @@
 using UnityEngine;
-namespace MCELoader.Shared.ProxyTypes;
-
-[SourceType(typeof(Il2CppQuantum.SpawnPointWithOrientation))]
-public struct SpawnPointWithOrientation
+namespace MCELoader.Shared.ProxyTypes
 {
-    public Vector3 position;
-    public float degreesOnY;
-}
+#if MCELoader
+    [SourceType(typeof(Il2CppQuantum.SpawnPointWithOrientation))]
+#endif
+    public struct SpawnPointWithOrientation
+    {
+        public Vector3 position;
+        public float degreesOnY;
+    }
 
+}

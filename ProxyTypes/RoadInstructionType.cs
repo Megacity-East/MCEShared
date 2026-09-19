@@ -1,4 +1,5 @@
-namespace MCELoader.Shared.ProxyTypes;
+namespace MCELoader.Shared.ProxyTypes
+{
 
 #if MCEEditor
 public enum RoadInstructionType
@@ -8,3 +9,4 @@ public enum RoadInstructionType
     ContinueLane = 2,
 }
 #endif
+}

@@ -1,7 +1,8 @@
 #if MCELoader
 using Il2CppQuantum;
 #endif
-namespace MCELoader.Shared.ProxyTypes;
+namespace MCELoader.Shared.ProxyTypes
+{
 
 #if MCEEditor
 public enum MutableStaticColliderType
@@ -15,10 +16,11 @@ public enum MutableStaticColliderType
 #if MCELoader
 [SourceType(typeof(Il2CppQuantum.MutableStaticColliderEntry))]
 #endif
-public struct MutableStaticColliderEntry
-{
-    public int colliderIndex; //Field offset: 0x0
-    public MutableStaticColliderType type; //Field offset: 0x4
-    public int data; //Field offset: 0x8
+    public struct MutableStaticColliderEntry
+    {
+        public int colliderIndex; //Field offset: 0x0
+        public MutableStaticColliderType type; //Field offset: 0x4
+        public int data; //Field offset: 0x8
 
+    }
 }

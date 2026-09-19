@@ -1,5 +1,6 @@
 
-namespace MCELoader.Shared.ProxyTypes;
+namespace MCELoader.Shared.ProxyTypes
+{
 
 #if MCEEditor
 public enum RoadConnectionFlags
@@ -11,3 +12,4 @@ public enum RoadConnectionFlags
 	DiscontinueAndConnect = 16,
 }
 #endif
+}

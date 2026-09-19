@@ -1,4 +1,5 @@
-namespace MCELoader.Shared.ProxyTypes;
+namespace MCELoader.Shared.ProxyTypes
+{
 
 #if MCEEditor
 public enum EquipmentID
@@ -43,3 +44,4 @@ public enum EquipmentID
     BODY_ARMOR_DUMMY = 127,
 }
 #endif
+}

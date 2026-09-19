@@ -1,4 +1,5 @@
-namespace MCELoader.Shared.ProxyTypes;
+namespace MCELoader.Shared.ProxyTypes
+{
 
 #if MCEEditor
 public enum Shape3DType
@@ -12,3 +13,4 @@ public enum Shape3DType
     Capsule = 32,
 }
 #endif
+}

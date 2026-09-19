@@ -1,5 +1,6 @@
 
-namespace MCELoader.Shared.ProxyTypes;
+namespace MCELoader.Shared.ProxyTypes
+{
 
 #if MCEEditor
 public enum PickupType
@@ -15,3 +16,4 @@ public enum PickupType
     Paint = 8,
 }
 #endif
+}

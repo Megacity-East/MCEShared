@@ -6,16 +6,18 @@ using UnityEngine;
 using Il2CppQuantum;
 #endif
 
-namespace MCELoader.Shared.ProxyTypes;
+namespace MCELoader.Shared.ProxyTypes
+{
 
 #if MCELoader
 [SourceType(typeof(Il2CppQuantum.ConsumablePoint))]
 #endif
 
-public struct ConsumablePoint
-{
-    public Vector3 position;
+    public struct ConsumablePoint
+    {
+        public Vector3 position;
 
-    [JsonConverter(typeof(StringEnumConverter))]
-    public PickupType consumableType;
+        [JsonConverter(typeof(StringEnumConverter))]
+        public PickupType consumableType;
+    }
 }

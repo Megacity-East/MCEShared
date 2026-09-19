@@ -1,4 +1,6 @@
-namespace MCELoader.Shared.ProxyTypes;
+namespace MCELoader.Shared.ProxyTypes
+{
+
 
 #if MCEEditor
 [Flags]
@@ -12,3 +14,5 @@ public enum ArenaFlags
     TriggerPoliceAfter = 32,
 }
 #endif
+
+}

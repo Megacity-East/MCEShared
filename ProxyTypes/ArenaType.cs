@@ -1,4 +1,5 @@
-namespace MCELoader.Shared.ProxyTypes;
+namespace MCELoader.Shared.ProxyTypes
+{
 
 #if MCEEditor
 public enum ArenaType
@@ -12,3 +13,4 @@ public enum ArenaType
 	CollectablesShop = 6,
 }
 #endif
+}

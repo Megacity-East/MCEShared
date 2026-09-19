@@ -1,6 +1,8 @@
-namespace MCELoader.Shared;
-
-public interface IAssetObject
+namespace MCELoader.Shared
 {
 
+    public interface IAssetObject
+    {
+
+    }
 }

@@ -1,4 +1,5 @@
-namespace MCELoader.Shared.ProxyTypes;
+namespace MCELoader.Shared.ProxyTypes
+{
 #if MCEEditor
 public enum CollectableShopID
 {
@@ -25,3 +26,4 @@ public enum CollectableShopID
 	Single_DascoPellet = 20,
 }
 #endif
+}
