@@ -1,3 +1,5 @@
+using System;
+
 namespace MCELoader.Shared
 {
 
@@ -33,3 +35,4 @@ namespace MCELoader.Shared
         public string RelativeSceneBundlePath;
     }
 }
+
