@@ -3,7 +3,6 @@ namespace MCELoader.Shared.ProxyTypes
 
 
 #if MCEEditor
-[Flags]
 public enum ArenaFlags
 {
     StopWarning = 1,

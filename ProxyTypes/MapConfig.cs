@@ -4,8 +4,9 @@ using Il2CppQuantum;
 #endif
 namespace MCELoader.Shared.ProxyTypes
 {
-
+#if MCELoader
     [SourceType(typeof(Il2CppQuantum.MapConfig))]
+#endif
     public class MapConfig : IAssetObject
     {
 #if MCEEditor
@@ -38,7 +39,7 @@ namespace MCELoader.Shared.ProxyTypes
         public int[] destructibleTerrainColliders; //Field offset: 0xF0
         public HeliPathConnection[] heliPathConnections; //Field offset: 0xF8
         public RoadData[] roads; //Field offset: 0x100
-        public LevelID levelID; // HACK/TODO inbound, im probably gonna reuse the map manifest guids but as fucky ints?
+                                 //        public LevelID levelID; // HACK/TODO inbound, im probably gonna reuse the map manifest guids but as fucky ints?
 #if MCEEditor
     public PoliceSpawn policeSpawnbehaviour; //Field offset: 0x10C
 #else
