@@ -38,7 +38,7 @@ namespace MCELoader
             TypeNameHandling = TypeNameHandling.Auto,
             ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
             Formatting = Formatting.Indented,
-            NullValueHandling = NullValueHandling.Ignore,
+            NullValueHandling = NullValueHandling.Include,
             Converters = new JsonConverter[] { new StringEnumConverter(), new Vector3Converter(), new QuaternionConverter() }
 
         };
