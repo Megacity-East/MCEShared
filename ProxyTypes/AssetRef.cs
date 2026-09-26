@@ -6,9 +6,26 @@ using MCELoader.Extensions;
 namespace MCELoader.Shared.ProxyTypes
 {
 
-    public struct AssetRef<SourceType> where SourceType : IAssetObject
+    public struct AssetRef
+
     {
-        public SourceType Referenced;
-        public long Guid;
+        public long Id;
+
+
+    }
+
+    public struct AssetRef<T>
+#if MCELoader
+      where T : Il2CppQuantum.AssetObject
+#endif
+    {
+        public long Id;
+
+#if MCELoader
+        public Il2CppQuantum.AssetRef<T> ToQNative()
+        {
+            return new() { Id = new AssetGuid(this.Id) };
+        }
+#endif
     }
 }

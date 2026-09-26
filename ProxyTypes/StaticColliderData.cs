@@ -2,7 +2,7 @@ namespace MCELoader.Shared.ProxyTypes
 {
 
 #if MCELoader
-[SourceType(typeof(Il2CppQuantum.StaticColliderData))]
+    [SourceType(typeof(Il2CppQuantum.StaticColliderData))]
 #endif
     public struct StaticColliderData
     {
@@ -18,12 +18,12 @@ namespace MCELoader.Shared.ProxyTypes
         public string Tag; //Field offset: 0x8
         public int Layer; //Field offset: 0x10
 
-        //    public AssetRef Asset; //Field offset: 0x18 //NOTE: thank the fucking lord this is unused
+        //public AssetRef Asset;
 
         public bool IsTrigger; //Field offset: 0x20
         public int ColliderIndex; //Field offset: 0x24
 #if MCELoader
-    public Il2CppQuantum.PhysicsCommon.StaticColliderMutableMode MutableMode; //Field offset: 0x28
+        public Il2CppQuantum.PhysicsCommon.StaticColliderMutableMode MutableMode; //Field offset: 0x28
 #else
         public StaticColliderData.StaticColliderMutableMode MutableMode; //Field offset: 0x28
 #endif
