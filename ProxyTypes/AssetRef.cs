@@ -11,6 +11,10 @@ namespace MCELoader.Shared.ProxyTypes
     {
         public long Id;
 
+        public AssetRef(long id)
+        {
+            Id = id;
+        }
 
     }
 
@@ -20,6 +24,11 @@ namespace MCELoader.Shared.ProxyTypes
 #endif
     {
         public long Id;
+
+        public AssetRef(long id)
+        {
+            Id = id;
+        }
 
 #if MCELoader
         public Il2CppQuantum.AssetRef<T> ToQNative()
