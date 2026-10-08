@@ -4,7 +4,7 @@ namespace MCELoader.Shared.ProxyTypes
     // TODO need to implement this, probably?, i really have no fucking clue how though qwq
     // NOTE: look into DynamicMap, it inherits from Map, so it could be interesting...
 #if MCELoader
-[SourceType(typeof(Il2CppQuantum.Map))]
+    [SourceType(typeof(Il2CppQuantum.Map))]
 #endif
     public class Map : IAssetObject
     {
