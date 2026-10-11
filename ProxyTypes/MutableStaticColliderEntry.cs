@@ -14,7 +14,7 @@ public enum MutableStaticColliderType
 #endif
 
 #if MCELoader
-[SourceType(typeof(Il2CppQuantum.MutableStaticColliderEntry))]
+    [SourceType(typeof(Il2CppQuantum.MutableStaticColliderEntry))]
 #endif
     public struct MutableStaticColliderEntry
     {

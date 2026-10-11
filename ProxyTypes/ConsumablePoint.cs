@@ -10,7 +10,7 @@ namespace MCELoader.Shared.ProxyTypes
 {
 
 #if MCELoader
-[SourceType(typeof(Il2CppQuantum.ConsumablePoint))]
+    [SourceType(typeof(Il2CppQuantum.ConsumablePoint))]
 #endif
 
     public struct ConsumablePoint

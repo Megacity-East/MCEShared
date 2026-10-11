@@ -5,7 +5,7 @@ namespace MCELoader.Shared.ProxyTypes.ComponentPrototypes
 
 
 #if MCELoader
-[SourceType(typeof(Il2CppQuantum.Prototypes.Transform3DPrototype))]
+    [SourceType(typeof(Il2CppQuantum.Prototypes.Transform3DPrototype))]
 #endif
     public class Transform3DPrototype : ComponentPrototype
     {

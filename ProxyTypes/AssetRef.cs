@@ -7,7 +7,6 @@ namespace MCELoader.Shared.ProxyTypes
 {
 
     public struct AssetRef
-
     {
         public long Id;
 
@@ -15,6 +14,13 @@ namespace MCELoader.Shared.ProxyTypes
         {
             Id = id;
         }
+
+#if MCELoader
+        public Il2CppQuantum.AssetRef ToQNative()
+        {
+            return new() { Id = new Il2CppQuantum.AssetGuid(this.Id) };
+        }
+#endif
 
     }
 
@@ -25,16 +31,12 @@ namespace MCELoader.Shared.ProxyTypes
     {
         public long Id;
 
-        public AssetRef(long id)
-        {
-            Id = id;
-        }
-
 #if MCELoader
         public Il2CppQuantum.AssetRef<T> ToQNative()
         {
-            return new() { Id = new AssetGuid(this.Id) };
+            return new() { Id = new Il2CppQuantum.AssetGuid(this.Id) };
         }
 #endif
+
     }
 }
