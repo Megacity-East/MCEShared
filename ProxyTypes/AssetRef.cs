@@ -6,6 +6,7 @@ using MCELoader.Extensions;
 namespace MCELoader.Shared.ProxyTypes
 {
 
+    [System.Serializable]
     public struct AssetRef
     {
         public long Id;
@@ -23,7 +24,7 @@ namespace MCELoader.Shared.ProxyTypes
 #endif
 
     }
-
+    [System.Serializable]
     public struct AssetRef<T>
 #if MCELoader
       where T : Il2CppQuantum.AssetObject
