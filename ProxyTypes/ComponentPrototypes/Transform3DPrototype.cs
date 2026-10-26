@@ -11,6 +11,13 @@ namespace MCELoader.Shared.ProxyTypes.ComponentPrototypes
     {
         public Vector3 Position;
         public Vector3 Rotation;
+
+#if MCELoader
+        public override Il2CppQuantum.ComponentPrototype GetQNative()
+        {
+            return MCELoader.Extensions.GeneratedExtensions.ToQNative(this);
+        }
+#endif
     }
 
 }

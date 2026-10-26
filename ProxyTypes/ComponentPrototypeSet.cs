@@ -12,7 +12,7 @@ namespace MCELoader.Shared.ProxyTypes
 #if MCELoader
         public Il2CppQuantum.ComponentPrototypeSet ToQNative()
         {
-            IEnumerable<Il2CppQuantum.ComponentPrototype> QNativeComponents = this.Components.Select(comp => comp.ToQNative());
+            IEnumerable<Il2CppQuantum.ComponentPrototype> QNativeComponents = this.Components.Select(comp => comp.GetQNative());
 
             return Il2CppQuantum.ComponentPrototypeSet.FromArray(QNativeComponents.ToReferenceArray());
         }

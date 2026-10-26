@@ -16,5 +16,12 @@ namespace MCELoader.Shared.ProxyTypes.ComponentPrototypes
         public AssetRef PhysicsMaterial;
 #endif
         public Shape3DConfig ShapeConfig;
+
+#if MCELoader
+        public override Il2CppQuantum.ComponentPrototype GetQNative()
+        {
+            return MCELoader.Extensions.GeneratedExtensions.ToQNative(this);
+        }
+#endif
     }
 }
