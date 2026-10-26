@@ -6,7 +6,7 @@ namespace MCELoader.Shared.ProxyTypes.ComponentPrototypes
 {
 
 #if MCEEditor
-    [Flags]
+    [System.Flags]
     public enum CallbackFlags
     {
         None = 0,

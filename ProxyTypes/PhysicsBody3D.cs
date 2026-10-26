@@ -5,7 +5,7 @@ namespace MCELoader.Shared.ProxyTypes
 ///<remarks>Currently this type just exists to house its enums.</remarks>
 public struct PhysicsBody3D
 {
-    [Flags]
+    [System.Flags]
     public enum ConfigFlags
     {
         Default = 58,
